@@ -1,3 +1,17 @@
 Una sencilla categoría de NSSet que añade las funciones combinatorias más comunes.
 
 A simple NSSSet category that adds the most usual combinatorial functions.
+
+Methods added (self-explanatory):
+
+- (NSSet*) permutations;
+
+- (NSSet*) variationsOfSize:(NSUInteger)size;
+- (NSSet*) variationsWithRepetitionsOfSize:(NSUInteger)size;
+
+- (NSSet*) combinationsOfSize:(NSUInteger)size;
+- (NSSet*) combinationsWithRepetitionsOfSize:(NSUInteger)size;
+
+Permutations and variations return a new set composed by NSArray objects (because order matters), while combinations return a NSSet composed by NSMutableSet (order doesn't matter here), and combinations with repetitions returns NSCountedSet-filled NSSet (so elements can be repeated).
+
+Still pretty optimizable, I think.
