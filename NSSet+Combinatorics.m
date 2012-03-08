@@ -1,13 +1,4 @@
-//
-//  NSSet+Combinatorics.m
-//  CalcuLiga
-//
-//  Created by Harad on 13/04/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import "NSSet+Combinatorics.h"
-
 
 @implementation NSSet (Combinatorics)
 
